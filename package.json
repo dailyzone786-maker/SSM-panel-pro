@@ -1,0 +1,13 @@
+{
+  "name": "smm-panel",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
